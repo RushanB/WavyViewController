@@ -13,6 +13,7 @@
 		5D592F6C1E5F6C130000F970 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D592F6A1E5F6C130000F970 /* Main.storyboard */; };
 		5D592F6E1E5F6C130000F970 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D592F6D1E5F6C130000F970 /* Assets.xcassets */; };
 		5D592F711E5F6C130000F970 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D592F6F1E5F6C130000F970 /* LaunchScreen.storyboard */; };
+		5D592F7A1E5F720D0000F970 /* WavyFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D592F791E5F720D0000F970 /* WavyFlowLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		5D592F6D1E5F6C130000F970 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D592F701E5F6C130000F970 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D592F721E5F6C130000F970 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D592F781E5F720D0000F970 /* WavyFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WavyFlowLayout.h; sourceTree = "<group>"; };
+		5D592F791E5F720D0000F970 /* WavyFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WavyFlowLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +61,10 @@
 		5D592F601E5F6C130000F970 /* WavyViewController */ = {
 			isa = PBXGroup;
 			children = (
-				5D592F641E5F6C130000F970 /* AppDelegate.h */,
-				5D592F651E5F6C130000F970 /* AppDelegate.m */,
-				5D592F671E5F6C130000F970 /* ViewController.h */,
-				5D592F681E5F6C130000F970 /* ViewController.m */,
-				5D592F6A1E5F6C130000F970 /* Main.storyboard */,
-				5D592F6D1E5F6C130000F970 /* Assets.xcassets */,
-				5D592F6F1E5F6C130000F970 /* LaunchScreen.storyboard */,
-				5D592F721E5F6C130000F970 /* Info.plist */,
+				5D592F7E1E5F72450000F970 /* UI */,
+				5D592F7B1E5F72140000F970 /* Model */,
+				5D592F7C1E5F72190000F970 /* View */,
+				5D592F7D1E5F721E0000F970 /* Controller */,
 				5D592F611E5F6C130000F970 /* Supporting Files */,
 			);
 			path = WavyViewController;
@@ -74,9 +73,47 @@
 		5D592F611E5F6C130000F970 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5D592F6D1E5F6C130000F970 /* Assets.xcassets */,
+				5D592F721E5F6C130000F970 /* Info.plist */,
 				5D592F621E5F6C130000F970 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5D592F7B1E5F72140000F970 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5D592F641E5F6C130000F970 /* AppDelegate.h */,
+				5D592F651E5F6C130000F970 /* AppDelegate.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		5D592F7C1E5F72190000F970 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5D592F781E5F720D0000F970 /* WavyFlowLayout.h */,
+				5D592F791E5F720D0000F970 /* WavyFlowLayout.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		5D592F7D1E5F721E0000F970 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5D592F671E5F6C130000F970 /* ViewController.h */,
+				5D592F681E5F6C130000F970 /* ViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		5D592F7E1E5F72450000F970 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				5D592F6A1E5F6C130000F970 /* Main.storyboard */,
+				5D592F6F1E5F6C130000F970 /* LaunchScreen.storyboard */,
+			);
+			name = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +188,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D592F7A1E5F720D0000F970 /* WavyFlowLayout.m in Sources */,
 				5D592F691E5F6C130000F970 /* ViewController.m in Sources */,
 				5D592F661E5F6C130000F970 /* AppDelegate.m in Sources */,
 				5D592F631E5F6C130000F970 /* main.m in Sources */,

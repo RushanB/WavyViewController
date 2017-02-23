@@ -62,9 +62,9 @@
 			isa = PBXGroup;
 			children = (
 				5D592F7E1E5F72450000F970 /* UI */,
+				5D592F7D1E5F721E0000F970 /* Controller */,
 				5D592F7B1E5F72140000F970 /* Model */,
 				5D592F7C1E5F72190000F970 /* View */,
-				5D592F7D1E5F721E0000F970 /* Controller */,
 				5D592F611E5F6C130000F970 /* Supporting Files */,
 			);
 			path = WavyViewController;
@@ -83,6 +83,8 @@
 		5D592F7B1E5F72140000F970 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5D592F781E5F720D0000F970 /* WavyFlowLayout.h */,
+				5D592F791E5F720D0000F970 /* WavyFlowLayout.m */,
 				5D592F641E5F6C130000F970 /* AppDelegate.h */,
 				5D592F651E5F6C130000F970 /* AppDelegate.m */,
 			);
@@ -92,8 +94,6 @@
 		5D592F7C1E5F72190000F970 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				5D592F781E5F720D0000F970 /* WavyFlowLayout.h */,
-				5D592F791E5F720D0000F970 /* WavyFlowLayout.m */,
 			);
 			name = View;
 			sourceTree = "<group>";

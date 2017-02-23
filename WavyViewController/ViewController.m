@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "WavyFlowLayout.h"
 
 @interface ViewController () <UICollectionViewDelegate, UICollectionViewDataSource>
 
@@ -20,6 +21,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    [self setUpLayout];
+    
+}
+
+- (void) setUpLayout{
+    
+    WavyFlowLayout *newFlowLayout = [[WavyFlowLayout alloc] init];
+    self.wavyCollectionView.collectionViewLayout = newFlowLayout;
+    
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
